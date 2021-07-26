@@ -181,7 +181,6 @@ public class MatrixOp {
 		
 	}
 
-	
 	public MatrixResult transpose(Matrix a)
 	{
 		
@@ -213,5 +212,23 @@ public class MatrixOp {
 		//Step 3:  Now answer is ready, i need to deliver it in a packaged format.
 		MatrixResult obj=new MatrixResult(MatrixResult.SUCCESS, "Transpose", ansMatrix);
 		return obj;
+	}
+	
+	
+	public void findDeterminant(Matrix matrixObj)
+	{
+		// Step 1: Check whether input parameter is null
+		if(matrixObj==null)
+		{
+			throw new IllegalArgumentException("Input Parameter is null");
+		}
+		
+		
+		//Step 2: Determinant can be calculated only if it is a  square matrix
+		if(matrixObj.getRows()!=matrixObj.getColumns())
+		{
+			throw new IllegalArgumentException("It is not a square matrix");
+		}
+		
 	}
 }
