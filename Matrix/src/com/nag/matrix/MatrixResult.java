@@ -3,9 +3,9 @@ package com.nag.matrix;
 public class MatrixResult {
 	
 	
-	public static int ERROR_INPUT_PARAMETERS_ARE_NULL=-1;
 	
-	public static int ERROR_INPUT_OBJECT_NULL=-2;
+	
+	public static int ERROR_INPUT_OBJECT_NULL=-1;
 	
 	public static int SUCCESS=-3;
 	
