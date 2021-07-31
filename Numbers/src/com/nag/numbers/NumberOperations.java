@@ -107,5 +107,55 @@ public class NumberOperations {
 			return false;
 		}
 	}
+	
+	
+	/**
+	 * 
+	 *  H.C.F is calculated using <b>Euclid's Division Lemma</b><br/> 
+	 * 
+	 * @param m
+	 * @param n
+	 * @return
+	 *   
+	 *    H.C.F of m and n
+	 */
+	public int hcf(int m, int n)
+	{
+		int reminder=0;
+		
+		while(n!=0)
+		{
+			reminder=m%n;
+			m=n;
+			n=reminder;
+		}
+		return m;
+	}
+	
+	/**
+	 * 
+	 *  L.C.M is calculated using the following formula <br/> 
+	 *  
+	 *  L.C.M (m,n) = (m*n)/H.C.F(m,n)
+	 *  
+	 *  
+	 * @param m
+	 * @param n
+	 * @return
+	 *  
+	 *   L.C.M of m and N
+	 *   
+	 */
+	public int lcm(int m,int n)
+	{
+		
+		int lcm=0;
+		
+		lcm=(m*n)/hcf(m,n);
+		return lcm;
+		
+	}
+	
+	
 
 }
