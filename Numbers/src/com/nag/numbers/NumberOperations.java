@@ -1,5 +1,20 @@
 package com.nag.numbers;
 
+
+/**
+ * 
+ * @author NAGESH
+ * 
+ * 
+ *  I am planning to cover few operations 
+ *  
+ *     - Reverse of Number and Palindrome
+ * 
+ *     - HCF and LCM
+ *
+ *	   - Convert Binary to Decimal and vice-versa
+ *
+ */
 public class NumberOperations {
 
 
@@ -20,6 +35,12 @@ public class NumberOperations {
 
 		while(n!=0)
 		{
+			
+			reminder=n%10;
+			ans= ans*10+reminder;
+			n=n/10;
+			
+			
 			/*
 			 * Ex: n = 1234
 			 * 
@@ -42,11 +63,9 @@ public class NumberOperations {
 			 *  ..
 			 *  ...
 			 *  ....
-			 * 
 			 */
-			reminder=n%10;
-			ans= ans*10+reminder;
-			n=n/10;
+			
+			
 		}
 		return ans;
 	}
@@ -91,7 +110,6 @@ public class NumberOperations {
 			 *  ..
 			 *  ...
 			 *  ....
-			 * 
 			 */
 			reminder=n%10;
 			ans= ans*10+reminder;

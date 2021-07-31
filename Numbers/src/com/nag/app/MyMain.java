@@ -9,6 +9,8 @@ public class MyMain {
 		
 		NumberOperations obj=new NumberOperations();
 		
+		
+		//  Reverse and Palindrome
 		int num=1234;
 		int reverse=obj.reverse(num);
 		System.out.println("Number : "+num+"  Reverse : "+reverse);
@@ -17,15 +19,8 @@ public class MyMain {
 		boolean palindrome=obj.checkWhetherItIsPalindrome(pNumber);
 		System.out.println("Palindrome Checking , Number : "+pNumber+"  Is it Palindrome ? : "+palindrome);
 		
-		/*
-		 * TODO: Think about following things
-		 *  
-		 *   > -ve input
-		 *   > Units place ending with zero  
-		 */
-
-		
-		
+		// TODO: Think about negative input and numbers ending with zero (units place)  
+		 
 		
 		// H.C.F
 		int m=8;
