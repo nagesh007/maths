@@ -166,14 +166,82 @@ public class NumberOperations {
 	 */
 	public int lcm(int m,int n)
 	{
-		
 		int lcm=0;
 		
 		lcm=(m*n)/hcf(m,n);
 		return lcm;
-		
 	}
 	
 	
+	/**
+	 * 
+	 * Swapping 2 numbers
+	 * 
+	 * @param obj
+	 * @return
+	 *   
+	 *    null or valid object
+	 *    <br/>
+	 *      If input is null then return value will be null
+	 *    <br/>
+	 */
+	public Numbers swap(Numbers obj)
+	{
+		
+		if(obj==null)
+		{
+			return null;
+		}
+		
+		int a=obj.getA();
+		int b=obj.getB();
+		
+		int z=0;
+		
+		//swap
+		z=a;
+		a=b;
+		b=z;
+		
+		Numbers result=new Numbers(a,b);
+		return result;
+	}
+	
+	/**
+	 *  
+	 */
+	
+	/**
+	 * Swapping 2 numbers <b>without using temporary variable</b></br/>
+	 * @param obj
+	 * @return
+	 * 
+	 * null or valid object
+	 *    <br/>
+	 *      If input is null then return value will be null
+	 *   <br/>
+	 * 
+	 */
+	public Numbers swapWithoutUsingTempVariable(Numbers obj)
+	{
+		
+		if(obj==null)
+		{
+			return null;
+		}
+		
+		int a=obj.getA();
+		int b=obj.getB();
+		
+		//swap
+		a=a-b;
+		b=a+b;
+		a=b-a;
+		
+		Numbers result=new Numbers(a,b);
+		return result;
+	}
+	
+    	
 
 }
